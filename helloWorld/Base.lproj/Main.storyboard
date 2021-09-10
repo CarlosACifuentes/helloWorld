@@ -706,13 +706,89 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="helloWorld" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="376" height="211"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mhk-H5-PzJ">
+                                <rect key="frame" x="18" y="175" width="44" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="U5Z-wR-JFy"/>
+                                    <constraint firstAttribute="height" constant="16" id="vrV-oJ-vVX"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Name:" id="DRc-TM-vlc">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dES-Hw-F2b">
+                                <rect key="frame" x="288" y="13" width="75" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="6fR-ca-DHX"/>
+                                    <constraint firstAttribute="width" constant="61" id="iMH-iV-Bp4"/>
+                                </constraints>
+                                <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="y9u-3R-kCK">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="buttonWasPressed:" target="XfG-lQ-9wD" id="dgn-p0-ZCM"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="iIC-yF-2oA">
+                                <rect key="frame" x="18" y="146" width="340" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="QmJ-Qb-vQ5"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="clipping" id="WHN-26-uwu">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TBF-hR-uLj">
+                                <rect key="frame" x="20" y="20" width="113" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="pepper_orange" id="gDP-xz-oR3"/>
+                            </imageView>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7Tk-F6-yRk">
+                                <rect key="frame" x="68" y="170" width="288" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="2Kc-Bk-4O8"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="AAK-lG-0Pc"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="A0e-D5-xIZ">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="iIC-yF-2oA" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="4rm-UM-il5"/>
+                            <constraint firstItem="iIC-yF-2oA" firstAttribute="top" secondItem="7Tk-F6-yRk" secondAttribute="bottom" constant="8" id="BbG-BR-qAE"/>
+                            <constraint firstItem="7Tk-F6-yRk" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="FwR-nF-pDl"/>
+                            <constraint firstItem="dES-Hw-F2b" firstAttribute="top" relation="greaterThanOrEqual" secondItem="iIC-yF-2oA" secondAttribute="bottom" constant="8" id="Hfc-lX-lX7"/>
+                            <constraint firstAttribute="trailing" secondItem="7Tk-F6-yRk" secondAttribute="trailing" constant="20" id="KAf-7B-SA9"/>
+                            <constraint firstAttribute="bottom" secondItem="dES-Hw-F2b" secondAttribute="bottom" constant="20" id="cA3-lm-khq"/>
+                            <constraint firstItem="7Tk-F6-yRk" firstAttribute="leading" secondItem="mhk-H5-PzJ" secondAttribute="trailing" constant="8" id="g6l-R4-Tf9"/>
+                            <constraint firstAttribute="trailing" secondItem="dES-Hw-F2b" secondAttribute="trailing" constant="20" id="iKA-rx-LyL"/>
+                            <constraint firstItem="mhk-H5-PzJ" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="iqs-IN-owM"/>
+                            <constraint firstAttribute="trailing" secondItem="iIC-yF-2oA" secondAttribute="trailing" constant="20" id="sYb-1G-b93"/>
+                            <constraint firstItem="mhk-H5-PzJ" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="wCa-gK-UEL"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="iIC-yF-2oA" id="Ggb-Bz-OhU"/>
+                        <outlet property="textField" destination="7Tk-F6-yRk" id="Y7A-6L-zU9"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="23" y="625.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="pepper_orange" width="1634" height="1588"/>
+    </resources>
 </document>

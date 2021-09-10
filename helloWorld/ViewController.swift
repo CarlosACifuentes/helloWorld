@@ -8,7 +8,10 @@
 import Cocoa
 
 class ViewController: NSViewController {
-
+    
+    @IBOutlet weak var textField: NSTextField!
+    @IBOutlet weak var label: NSTextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,6 +29,10 @@ class ViewController: NSViewController {
         return num1 + num2
     }
 
+    @IBAction func buttonWasPressed(_ sender: Any) {
+        label.stringValue = "Hello \(textField.stringValue)!"
+    }
+    
     override var representedObject: Any? {
         didSet {
         // Update the view, if already loaded.
