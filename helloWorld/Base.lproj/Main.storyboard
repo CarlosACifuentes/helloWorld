@@ -706,13 +706,89 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="helloWorld" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="488" height="206"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hLo-Az-Yhx">
+                                <rect key="frame" x="18" y="170" width="47" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="43" id="je2-e4-xee"/>
+                                    <constraint firstAttribute="height" constant="16" id="wDG-g6-iZs"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="Name:" id="b2q-qW-ZPg">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="IDn-Kn-874">
+                                <rect key="frame" x="71" y="165" width="397" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="4uy-nU-flp"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="pKO-ml-fr8"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="left" drawsBackground="YES" id="5Hk-2i-8a5">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="n0Z-6F-asx">
+                                <rect key="frame" x="377" y="13" width="98" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="19v-4L-e1N"/>
+                                    <constraint firstAttribute="width" constant="84" id="pXz-Vf-n9G"/>
+                                </constraints>
+                                <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="hi2-pU-ebD">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="buttonWasPressed:" target="XfG-lQ-9wD" id="Tc8-Yh-Pua"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="csW-fT-S7C">
+                                <rect key="frame" x="18" y="141" width="452" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="f4t-Wa-LKD"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="clipping" id="hzn-S9-ruq">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dKh-C0-n8n">
+                                <rect key="frame" x="20" y="20" width="207" height="121"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="pepper_orange" id="WRs-YV-pDo"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="csW-fT-S7C" secondAttribute="trailing" constant="20" id="39f-0A-lj0"/>
+                            <constraint firstItem="hLo-Az-Yhx" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="CKb-Gr-YNi"/>
+                            <constraint firstItem="csW-fT-S7C" firstAttribute="top" secondItem="IDn-Kn-874" secondAttribute="bottom" constant="8" id="Gcy-V3-dLc"/>
+                            <constraint firstItem="csW-fT-S7C" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="Haj-N0-aYW"/>
+                            <constraint firstAttribute="trailing" secondItem="n0Z-6F-asx" secondAttribute="trailing" constant="20" id="NHD-yV-DCH"/>
+                            <constraint firstItem="hLo-Az-Yhx" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="UFn-Ij-4zS"/>
+                            <constraint firstAttribute="trailing" secondItem="IDn-Kn-874" secondAttribute="trailing" constant="20" id="aQ6-Mk-ymr"/>
+                            <constraint firstItem="IDn-Kn-874" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="dqa-Xd-pX7"/>
+                            <constraint firstItem="n0Z-6F-asx" firstAttribute="top" relation="greaterThanOrEqual" secondItem="csW-fT-S7C" secondAttribute="bottom" constant="8" id="mxf-lm-gsj"/>
+                            <constraint firstItem="IDn-Kn-874" firstAttribute="leading" secondItem="hLo-Az-Yhx" secondAttribute="trailing" constant="8" id="orl-Gd-eQn"/>
+                            <constraint firstAttribute="bottom" secondItem="n0Z-6F-asx" secondAttribute="bottom" constant="20" id="vr0-LR-zoE"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="csW-fT-S7C" id="VMW-PS-ZLr"/>
+                        <outlet property="textField" destination="IDn-Kn-874" id="dpT-VC-jFd"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="79" y="623"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="pepper_orange" width="1634" height="1588"/>
+    </resources>
 </document>
