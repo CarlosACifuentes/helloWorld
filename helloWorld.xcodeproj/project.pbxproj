@@ -11,7 +11,18 @@
 		6B60C45726EA4C05000025FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B60C45626EA4C05000025FC /* ViewController.swift */; };
 		6B60C45926EA4C06000025FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B60C45826EA4C06000025FC /* Assets.xcassets */; };
 		6B60C45C26EA4C06000025FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B60C45A26EA4C06000025FC /* Main.storyboard */; };
+		6BE1DC8826EC29B700A56FE7 /* helloWorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE1DC8726EC29B700A56FE7 /* helloWorldTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6BE1DC8A26EC29B700A56FE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B60C44926EA4C05000025FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B60C45026EA4C05000025FC;
+			remoteInfo = helloWorld;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		6B60C45126EA4C05000025FC /* helloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = helloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -21,10 +32,20 @@
 		6B60C45B26EA4C06000025FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6B60C45D26EA4C06000025FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B60C45E26EA4C06000025FC /* helloWorld.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = helloWorld.entitlements; sourceTree = "<group>"; };
+		6BE1DC8526EC29B700A56FE7 /* helloWorldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = helloWorldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BE1DC8726EC29B700A56FE7 /* helloWorldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helloWorldTests.swift; sourceTree = "<group>"; };
+		6BE1DC8926EC29B700A56FE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		6B60C44E26EA4C05000025FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BE1DC8226EC29B700A56FE7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				6B60C45326EA4C05000025FC /* helloWorld */,
+				6BE1DC8626EC29B700A56FE7 /* helloWorldTests */,
 				6B60C45226EA4C05000025FC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				6B60C45126EA4C05000025FC /* helloWorld.app */,
+				6BE1DC8526EC29B700A56FE7 /* helloWorldTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,6 +84,15 @@
 				6B60C45E26EA4C06000025FC /* helloWorld.entitlements */,
 			);
 			path = helloWorld;
+			sourceTree = "<group>";
+		};
+		6BE1DC8626EC29B700A56FE7 /* helloWorldTests */ = {
+			isa = PBXGroup;
+			children = (
+				6BE1DC8726EC29B700A56FE7 /* helloWorldTests.swift */,
+				6BE1DC8926EC29B700A56FE7 /* Info.plist */,
+			);
+			path = helloWorldTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +115,24 @@
 			productReference = 6B60C45126EA4C05000025FC /* helloWorld.app */;
 			productType = "com.apple.product-type.application";
 		};
+		6BE1DC8426EC29B700A56FE7 /* helloWorldTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BE1DC8E26EC29B700A56FE7 /* Build configuration list for PBXNativeTarget "helloWorldTests" */;
+			buildPhases = (
+				6BE1DC8126EC29B700A56FE7 /* Sources */,
+				6BE1DC8226EC29B700A56FE7 /* Frameworks */,
+				6BE1DC8326EC29B700A56FE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6BE1DC8B26EC29B700A56FE7 /* PBXTargetDependency */,
+			);
+			name = helloWorldTests;
+			productName = helloWorldTests;
+			productReference = 6BE1DC8526EC29B700A56FE7 /* helloWorldTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -94,6 +144,10 @@
 				TargetAttributes = {
 					6B60C45026EA4C05000025FC = {
 						CreatedOnToolsVersion = 12.5.1;
+					};
+					6BE1DC8426EC29B700A56FE7 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 6B60C45026EA4C05000025FC;
 					};
 				};
 			};
@@ -111,6 +165,7 @@
 			projectRoot = "";
 			targets = (
 				6B60C45026EA4C05000025FC /* helloWorld */,
+				6BE1DC8426EC29B700A56FE7 /* helloWorldTests */,
 			);
 		};
 /* End PBXProject section */
@@ -122,6 +177,13 @@
 			files = (
 				6B60C45926EA4C06000025FC /* Assets.xcassets in Resources */,
 				6B60C45C26EA4C06000025FC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BE1DC8326EC29B700A56FE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +199,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6BE1DC8126EC29B700A56FE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BE1DC8826EC29B700A56FE7 /* helloWorldTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6BE1DC8B26EC29B700A56FE7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B60C45026EA4C05000025FC /* helloWorld */;
+			targetProxy = 6BE1DC8A26EC29B700A56FE7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6B60C45A26EA4C06000025FC /* Main.storyboard */ = {
@@ -308,6 +386,46 @@
 			};
 			name = Release;
 		};
+		6BE1DC8C26EC29B700A56FE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = MNX844B76T;
+				INFOPLIST_FILE = helloWorldTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.carloscifuentes.helloWorldTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/helloWorld.app/Contents/MacOS/helloWorld";
+			};
+			name = Debug;
+		};
+		6BE1DC8D26EC29B700A56FE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = MNX844B76T;
+				INFOPLIST_FILE = helloWorldTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.carloscifuentes.helloWorldTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/helloWorld.app/Contents/MacOS/helloWorld";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -325,6 +443,15 @@
 			buildConfigurations = (
 				6B60C46226EA4C06000025FC /* Debug */,
 				6B60C46326EA4C06000025FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BE1DC8E26EC29B700A56FE7 /* Build configuration list for PBXNativeTarget "helloWorldTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BE1DC8C26EC29B700A56FE7 /* Debug */,
+				6BE1DC8D26EC29B700A56FE7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
